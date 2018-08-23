@@ -45,32 +45,6 @@ dino_in = dino_type()
 
 write(6,'(A)') 'Reading dinodump'
 
-! open(unit=1234, file='dinodump.dat', action='read')
-
-! read(1234, *) last_halo_cell
-! read(1234, *) ncell_2d
-! read(1234, *) mm_vel_v_inv_diag_cma_nrow
-! read(1234, *) mm_vel_v_inv_diag_cma_ncol
-! read(1234, *) mm_vel_v_inv_diag_cma_bandwidth
-! read(1234, *) mm_vel_v_inv_diag_cma_alpha
-! read(1234, *) mm_vel_v_inv_diag_cma_beta
-! read(1234, *) mm_vel_v_inv_diag_cma_gamma_m
-! read(1234, *) mm_vel_v_inv_diag_cma_gamma_p
-! read(1234, *) grad_v_cma_nrow
-! read(1234, *) grad_v_cma_ncol
-! read(1234, *) grad_v_cma_bandwidth
-! read(1234, *) grad_v_cma_alpha
-! read(1234, *) grad_v_cma_beta
-! read(1234, *) grad_v_cma_gamma_m
-! read(1234, *) grad_v_cma_gamma_p
-! read(1234, *) mm_vel_v_inv_grad_v_cma_nrow
-! read(1234, *) mm_vel_v_inv_grad_v_cma_ncol
-! read(1234, *) mm_vel_v_inv_grad_v_cma_bandwidth
-! read(1234, *) mm_vel_v_inv_grad_v_cma_alpha
-! read(1234, *) mm_vel_v_inv_grad_v_cma_beta
-! read(1234, *) mm_vel_v_inv_grad_v_cma_gamma_m
-! read(1234, *) mm_vel_v_inv_grad_v_cma_gamma_p
-
 call dino_in%input_scalar(last_halo_cell)
 call dino_in%input_scalar(ncell_2d)
 call dino_in%input_scalar(mm_vel_v_inv_diag_cma_nrow)
@@ -132,14 +106,6 @@ allocate(grad_v_cma_matrix(grad_v_cma_bandwidth, &
 allocate(known_output(mm_vel_v_inv_grad_v_cma_bandwidth,&
                       mm_vel_v_inv_grad_v_cma_nrow,&
                       ncell_2d))
-
-! read(1234,*) mm_vel_v_inv_diag_cma_matrix
-
-! read(1234,*) grad_v_cma_matrix
-
-! read(1234,*) known_output
-
-! close(1234)
 
 ! populate matrices
 !
