@@ -1,3 +1,8 @@
+#!-----------------------------------------------------------------------------
+#! Copyright (c) 2017,  Met Office, on behalf of HMSO and Queen's Printer
+#! For further details please refer to the file LICENCE.original which you
+#! should have received as part of this distribution.
+#!-----------------------------------------------------------------------------
 ifndef PLATFORM
 $(error Platform file not loaded, re-run as "make -f" providing a file from \
 the "../make" subdirectory as an argument)

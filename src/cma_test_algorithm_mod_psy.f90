@@ -1,3 +1,8 @@
+!-----------------------------------------------------------------------------
+! Copyright (c) 2017,  Met Office, on behalf of HMSO and Queen's Printer
+! For further details please refer to the file LICENCE.original which you
+! should have received as part of this distribution.
+!-----------------------------------------------------------------------------
 program invoke_12_columnwise_op_mul_kernel_type
 
 use constants_mod, only: r_def, r_double
